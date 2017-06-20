@@ -124,11 +124,6 @@ p:last-child {
 .content {
 	
 }
-.fat-box {
-	width: 100%;
-	height: 100px;
-	background-color: rgba(255,255,255,.8);
-}
 
 /*** Header Styles ***/
 /** Logo Area **/
@@ -139,7 +134,7 @@ header {
 	left: 0;
 	width: 100%;
 	padding: 3px 15px;
-	border-bottom: 1px solid rgba(0,0,0,.8);
+	border-bottom: 1px solid #1a1a1a;
 	background-color: #3c3c3c;
 }
 header .header-logo {
@@ -192,11 +187,10 @@ nav ul {
 nav ul li a {
 	display: block;
 	padding: 15px;
-	font-size: .8em;
+	font-size: .7em;
 	border-bottom: 1px solid rgba(0,0,0,.4);
 }
 nav ul li a:hover {
-	/*color: #a0dfff;*/
 	-moz-box-shadow: inset 0 0 25px rgba(0,0,0,.6);
 	-webkit-box-shadow: inset 0 0 25px rgba(0,0,0,.6);
 	box-shadow: inset 0 0 25px rgba(0,0,0,.6);
@@ -226,7 +220,7 @@ footer {
 	padding: 10px 15px;
 	font-size: .6em;
 	letter-spacing: 1px;
-	border-top: 1px solid rgba(0,0,0,.8);
+	border-top: 1px solid #1a1a1a;
 	background-color: #3c3c3c;
 }
 footer .footer-nav ul {

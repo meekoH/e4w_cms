@@ -14,10 +14,6 @@
             <?php require_once('components/site_components/side_nav.php'); ?>
 
     		--><div class="content-wrapper">
-                <div class="fat-box"></div>
-                <div class="fat-box"></div>
-                <div class="fat-box"></div>
-                <div class="fat-box"></div>
                 <div class="content">
 
                     <div ng-app="productApp">
