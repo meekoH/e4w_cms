@@ -3,15 +3,21 @@
 <html>
     <head>
         <?php require_once('components/site_components/head.html'); ?>
-        <title>Angular CMS</title>
+        <title>Evan 4 Web - Content Management System</title>
     </head>
 
     <body>
     	<div class="wrapper">
 
-            <?php require_once('components/site_components/header.html'); ?>
+            <?php require_once('components/site_components/header.php'); ?>
 
-    		<div class="content-wrapper">
+            <?php require_once('components/site_components/side_nav.php'); ?>
+
+    		--><div class="content-wrapper">
+                <div class="fat-box"></div>
+                <div class="fat-box"></div>
+                <div class="fat-box"></div>
+                <div class="fat-box"></div>
                 <div class="content">
 
                     <div ng-app="productApp">
@@ -23,7 +29,7 @@
                 </div>
             </div>
 
-            <?php require_once('components/site_components/footer.html'); ?>
+            <?php require_once('components/site_components/footer.php'); ?>
 
     	</div>
     </body>

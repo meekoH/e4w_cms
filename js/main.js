@@ -5,3 +5,9 @@ var productApp = angular.module("productApp", []);
 productApp.controller("productCtrl", function($scope, $http) {
     
 });
+
+// Globally used variables.
+var header = $('header');
+var sideNav = $('nav');
+var footer = $('footer');
+var contentWrapper = $('.content-wrapper');
