@@ -7,23 +7,18 @@
     </head>
 
     <body>
-    	<div class="wrapper">
+    	<div class="wrapper" ng-app="e4wApp">
 
             <?php require_once('components/site_components/header.php'); ?>
 
-            <?php require_once('components/site_components/side_nav.php'); ?>
+            <nav-list></nav-list>
 
-    		--><div class="content-wrapper">
+    		<div class="content-wrapper">
                 <div class="content">
-
-                    <div ng-app="productApp">
-                        <div ng-controller="productCtrl">
-                            
-                        </div>
-                    </div>
-
+                    <div ng-view></div>
                 </div>
             </div>
+            <div class="clear"></div>
 
             <?php require_once('components/site_components/footer.php'); ?>
 

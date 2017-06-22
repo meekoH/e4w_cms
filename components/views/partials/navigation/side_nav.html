@@ -1,0 +1,18 @@
+<nav class="fw-light side-nav" ng-controller="sideNavCtrl">
+	<ul>
+		<li ng-repeat="navItem in navItems" ng-class="setActiveMenu('{{navItem.nav_link}}')">
+			<a href="#{{navItem.nav_link}}">
+				<div class="display-table">
+					<div class="display-row">
+						<div class="display-cell">
+							<i class="fa fa-lg fa-{{navItem.nav_icon}}" aria-hidden="true"></i>
+						</div>
+						<div class="display-cell">
+							{{navItem.nav_title}}
+						</div>
+					</div>
+				</div>
+			</a>
+		</li>
+	</ul>
+</nav>

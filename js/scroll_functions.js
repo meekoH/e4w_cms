@@ -24,11 +24,16 @@ function scrollInit() {
 	if (sideNavHeight < contentHeight) {
 		sideNavHeight = contentHeight;
 	}
+
 	// Set the styling on the Content Wrapper and Side Nav.
 	contentWrapper.css({'margin-top' : headerHeight});
-	sideNav.css({'margin-top' : headerHeight, 'min-height' : sideNavHeight});
+	$('.side-nav').css({'margin-top' : headerHeight, 'min-height' : sideNavHeight});
 }
 
 $(window).scroll(scrollInit);
 $(window).resize(scrollInit);
-scrollInit();
+
+// Needed a setTimeout due to the rendering of the angular app itself.
+setTimeout(function() {
+	scrollInit();
+}, 100);

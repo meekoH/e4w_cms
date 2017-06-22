@@ -116,7 +116,7 @@ p:last-child {
 	position: relative;
 }
 .content-wrapper {
-	display: inline-block;
+	float: right;
 	vertical-align: top;
 	width: calc(100% - 200px);
 	padding: 15px;
@@ -176,8 +176,7 @@ header .header-title span {
 }
 /*** Side Navigation Styles ***/
 nav {
-	display: inline-block;
-	vertical-align: top;
+	float: left;
 	width: 200px;
 	background-color: #4d4d4d;
 }
@@ -188,7 +187,7 @@ nav ul li a {
 	display: block;
 	padding: 15px;
 	font-size: .7em;
-	border-bottom: 1px solid rgba(0,0,0,.4);
+	border-bottom: 1px solid #333;
 }
 nav ul li a:hover {
 	-moz-box-shadow: inset 0 0 25px rgba(0,0,0,.6);
@@ -196,6 +195,14 @@ nav ul li a:hover {
 	box-shadow: inset 0 0 25px rgba(0,0,0,.6);
 }
 nav ul li a:hover i {
+	color: #ffa741;
+}
+nav ul li.active a {
+	-moz-box-shadow: inset 0 0 25px rgba(0,0,0,.6);
+	-webkit-box-shadow: inset 0 0 25px rgba(0,0,0,.6);
+	box-shadow: inset 0 0 25px rgba(0,0,0,.6);
+}
+nav ul li.active a i {
 	color: #ffa741;
 }
 nav ul li a .display-cell {
@@ -255,10 +262,10 @@ footer .footer-copyright {
 	line-height: 1.4;
 }
 .coffee-icon {
-	color: #995533;
+	color: #cd853f;
 }
 .heart-icon {
-	color: #e34c26;
+	color: #ff6666;
 }
 /*** Responsive Styles ***/
 

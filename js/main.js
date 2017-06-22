@@ -1,7 +1,15 @@
 // Let's define our AngularJS application.
-var productApp = angular.module("productApp", []);
+var e4wApp = angular.module("e4wApp", ['ngRoute']);
 
-// Let's set up a controller for this app.
-productApp.controller("productCtrl", function($scope, $http) {
-    
+e4wApp.config(function($routeProvider){
+	$routeProvider
+		.when('/dashboard', {
+            templateUrl : './components/views/partials/dashboard/dashboard.html',
+            controller  : 'dashboardCtrl'
+        });
 });
+
+// Set up the Footer copyright date.
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById("currentYear").innerHTML = year;
