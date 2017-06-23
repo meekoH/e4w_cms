@@ -1,6 +1,6 @@
 // Setting up the Navigation controller.
-e4wApp.controller('sideNavCtrl', function($scope, $location, $http) {
-	// Run the getProducts function in order to display a list of all available products.
+e4wApp.controller('sideNavCtrl', function($scope, $location, $http, $element) {
+	// Run the getNavItems function to initialize the navigation.
     getNavItems();
 
     // getProducts initializes the data and displays the contents to the user.
@@ -16,4 +16,9 @@ e4wApp.controller('sideNavCtrl', function($scope, $location, $http) {
 		var currentPage = $location.path().substring(1);
 		return chosenPage === currentPage ? "active" : "";
 	};
+
+    $scope.closeThatShit = function() {
+        $('.side-nav').removeClass('nav-opened');
+        $('.res-nav-close-btn-container').removeClass('nav-opened');
+    }
 });

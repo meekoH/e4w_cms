@@ -1,4 +1,13 @@
 <header>
+	<div class="mobile-visible res-nav-open-btn-container">
+		<a href="#" id="resNavOpen" onclick="return false;">
+            <div id="resNavIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </a>
+	</div>
 	<div class="display-table fl">
 		<div class="display-row">
 			<div class="display-cell header-logo">
@@ -8,6 +17,14 @@
 				<span class="header-title">Evan <span class="e4w-blue">4</span> Web</span>
 			</div>
 		</div>
+	</div>
+	<div class="fr res-nav-close-btn-container">
+		<a href="#" id="resNavClose" onclick="return false;">
+			<div id="resNavIcon">
+                <span></span>
+                <span></span>
+            </div>
+		</a>
 	</div>
 	<div class="display-table fr fw-light login-info">
 		<div class="display-row">

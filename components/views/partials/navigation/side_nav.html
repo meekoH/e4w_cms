@@ -1,7 +1,7 @@
 <nav class="fw-light side-nav" ng-controller="sideNavCtrl">
 	<ul>
 		<li ng-repeat="navItem in navItems" ng-class="setActiveMenu('{{navItem.nav_link}}')">
-			<a href="#{{navItem.nav_link}}">
+			<a href="#{{navItem.nav_link}}" class="navigation-link" ng-click="closeThatShit()">
 				<div class="display-table">
 					<div class="display-row">
 						<div class="display-cell">
