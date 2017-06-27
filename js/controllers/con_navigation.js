@@ -1,5 +1,10 @@
 // Setting up the Navigation controller.
-e4wApp.controller('sideNavCtrl', function($scope, $location, $http, $element) {
+e4wApp.controller('sideNavCtrl', function($scope, $rootScope, $location, $http) {
+    $scope.location = $location.path();
+    $rootScope.$on('$routeChangeSuccess', function() {
+        $scope.location = $location.path();
+    });
+    
 	// Run the getNavItems function to initialize the navigation.
     getNavItems();
 

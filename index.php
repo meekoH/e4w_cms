@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <div class="wrapper" ng-app="e4wApp">
+        <div class="wrapper" ng-app="e4wApp" ng-class="{hidden: location === '/'}">
 
             <?php require_once('components/site_components/header.php'); ?>
 

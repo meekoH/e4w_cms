@@ -1,5 +1,5 @@
 <nav class="fw-light side-nav" ng-controller="sideNavCtrl">
-	<ul ng-if="loggedInContent">
+	<ul>
 		<li ng-repeat="navItem in navItems" ng-class="setActiveMenu('{{navItem.nav_link}}')">
 			<a href="#{{navItem.nav_link}}" class="navigation-link" ng-click="closeMobileNav()">
 				<div class="display-table">

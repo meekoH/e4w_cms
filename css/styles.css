@@ -125,6 +125,13 @@ p:last-child {
 .wrapper {
 	position: relative;
 }
+.wrapper.hidden .side-nav {
+	width: 0;
+	overflow: hidden;
+}
+.wrapper.hidden .content-wrapper {
+	width: 100%;
+}
 .content-wrapper {
 	position: relative;
 	float: right;
@@ -141,8 +148,8 @@ p:last-child {
     opacity: 1;
 }
 .content.ng-enter, .content.ng-leave {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
 }
 .content.ng-enter {
     opacity: 0;
@@ -275,10 +282,10 @@ header .display-table {
 	width: 24px;
 	height: 15px;
 	position: relative;
-	-webkit-transition: .3s ease-in-out;
-	-moz-transition: .3s ease-in-out;
-	-o-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 	cursor: pointer;
 }
 #resNavIcon span {
@@ -400,6 +407,56 @@ footer {
 }
 .heart-icon {
 	color: #ff6666;
+}
+/*** Form Styles ***/
+.form-submit {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px;
+	font-size: 1em;
+	color: rgba(0,0,0,.6);
+	background-color: #a0dfff;
+	border: 1px solid rgba(0,0,0,.8);
+	-webkit-appearance: none;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.form-submit:hover {
+	color: #fff;
+	background-color: #49c2fc;
+}
+
+/*** Login Form Styles ***/
+.e4w-login-form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #3c3c3c;
+}
+.e4w-login-form .form-row {
+	padding: 10px;
+}
+.e4w-login-form .form-title {
+	display: block;
+	margin-bottom: 5px;
+	font-size: .8em;
+}
+.e4w-login-form .input-field {
+	width: 100%;
+	padding: 10px;
+	font-size: .7em;
+	color: #fff;
+	background-color: rgba(255,255,255,.2);
+	border: 1px solid rgba(0,0,0,.8);
+}
+.e4w-login-form .input-field:focus {
+	border: 1px solid #ffd19b;
+	outline: none;
+}
+.e4w-login-form .form-submit {
+	width: 100%;
 }
 /*** Responsive Styles ***/
 

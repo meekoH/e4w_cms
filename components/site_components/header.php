@@ -35,7 +35,7 @@
 					<a href="#">
 						Settings <i class="fa fa-lg fa-cog" aria-hidden="true"></i>
 					</a>
-					<a href="#">
+					<a href="#/">
 						Logout <i class="fa fa-lg fa-power-off" aria-hidden="true"></i>
 					</a>
 				</span>
