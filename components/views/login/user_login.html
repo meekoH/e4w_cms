@@ -1,0 +1,12 @@
+<form class="e4w-login-form" ng-submit="loginCtrl(loginDetails)">
+    <h1>Login</h1>
+    <label for="email_address">
+        <span class="form-title">Username:</span>
+        <input type="email" name="email_address" ng-model="loginDetails.login_email" required>
+    </label>
+    <label for="password">
+        <span class="form-title">Password:</span>
+        <input type="password" name="password" ng-model="loginDetails.login_password" required>
+    </label>
+    <button type="submit">Login</button>
+</form>

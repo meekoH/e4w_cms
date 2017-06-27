@@ -3,17 +3,17 @@
 <html>
     <head>
         <?php require_once('components/site_components/head.html'); ?>
-        <title>Evan 4 Web - Content Management System</title>
+        <title>Content Management System - Evan 4 Web</title>
     </head>
 
     <body>
-    	<div class="wrapper" ng-app="e4wApp">
+        <div class="wrapper" ng-app="e4wApp">
 
             <?php require_once('components/site_components/header.php'); ?>
 
             <nav-list></nav-list>
 
-    		<div class="content-wrapper">
+            <div class="content-wrapper">
                 <div class="content">
                     <div ng-view></div>
                 </div>
@@ -22,7 +22,7 @@
 
             <?php require_once('components/site_components/footer.php'); ?>
 
-    	</div>
+        </div>
     </body>
 
     <?php require_once('components/site_components/scripts.html'); ?>

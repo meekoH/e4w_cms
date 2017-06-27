@@ -26,10 +26,10 @@
             </div>
 		</a>
 	</div>
-	<div class="display-table fr fw-light login-info">
+	<div class="display-table fr ta-right fw-light login-info" ng-if="loggedInContent">
 		<div class="display-row">
 			<div class="display-cell">
-				Welcome back, <span class="login-info-name e4w-blue">Evan Paradis</span>.
+				Welcome back, <span class="login-info-name e4w-blue">Evan<span class="mobile-hidden"> Paradis</span></span>.
 
 				<span class="login-info-controls ta-right">
 					<a href="#">

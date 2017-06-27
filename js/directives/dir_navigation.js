@@ -3,6 +3,6 @@ e4wApp.directive('navList', function(){
     return {
         restrict: 'EA',
         replace: true,
-        templateUrl: './components/views/partials/navigation/side_nav.html'
+        templateUrl: './components/views/navigation/side_nav.html'
     };
 });

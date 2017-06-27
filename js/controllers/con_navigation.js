@@ -17,8 +17,7 @@ e4wApp.controller('sideNavCtrl', function($scope, $location, $http, $element) {
 		return chosenPage === currentPage ? "active" : "";
 	};
 
-    $scope.closeThatShit = function() {
-        $('.side-nav').removeClass('nav-opened');
-        $('.res-nav-close-btn-container').removeClass('nav-opened');
+    $scope.closeMobileNav = function() {
+        $('header, .side-nav, .res-nav-close-btn-container').removeClass('nav-opened');
     }
 });
