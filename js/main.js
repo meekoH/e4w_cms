@@ -1,6 +1,6 @@
 // Define the AngularJS application and add the ngRoute dependency.
 // e4wApp is the module for the CMS itself.
-var e4wApp = angular.module("e4wApp", ['ngRoute']);
+var e4wApp = angular.module("e4wApp", ['ngRoute', 'ngAnimate']);
 
 // ngRoute module is used to configure (config) the routing for this SPA.
 // $routeProvider provides the view based on the url.

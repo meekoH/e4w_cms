@@ -126,13 +126,35 @@ p:last-child {
 	position: relative;
 }
 .content-wrapper {
+	position: relative;
 	float: right;
 	vertical-align: top;
 	width: calc(100% - 200px);
 	padding: 15px;
 }
 .content {
-	
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    opacity: 1;
+}
+.content.ng-enter, .content.ng-leave {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.content.ng-enter {
+    opacity: 0;
+}
+.content.ng-enter-active {
+    opacity: 1;
+}
+.content.ng-leave {
+    opacity: 1;
+}
+.content.ng-leave-active {
+    opacity: 0;
 }
 .e4w-card {
 	padding: 15px;
@@ -395,6 +417,8 @@ footer {
 	}
 	.content-wrapper {
 		width: 100%;
+	}
+	.content {
 		padding: 50px 15px 15px;
 	}
 	header {

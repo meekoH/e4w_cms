@@ -14,9 +14,7 @@
             <nav-list></nav-list>
 
             <div class="content-wrapper">
-                <div class="content">
-                    <div ng-view></div>
-                </div>
+                <div ng-view data-content-height class="content"></div>
             </div>
             <div class="clear"></div>
 

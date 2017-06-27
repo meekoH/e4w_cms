@@ -2,6 +2,7 @@
 var header = $('header');
 var footer = $('footer');
 var contentWrapper = $('.content-wrapper');
+var content = $('.content');
 
 // scrollInit sets up the Side Navigation height and checks for mobile media queries.
 function scrollInit() {
@@ -14,13 +15,13 @@ function scrollInit() {
 	// Get the Window height.
 	var winHeight = $(window).height();
 	// Get the Content height.
-	var contentHeight = contentWrapper.outerHeight();
+	var contentHeight = $('.content').outerHeight(true);
 	// Get the Header height.
-	var headerHeight = header.outerHeight();
-	// Get the Content & Header height together (because of the margin it adds).
+	var headerHeight = header.outerHeight(true);
+	// Get the Content Wrapper & Header height together (because of the margin it adds).
 	var totalContentHeight = contentHeight + headerHeight;
 	// Get the Footer height.
-	var footerHeight = footer.outerHeight();
+	var footerHeight = footer.outerHeight(true);
 	// Get the Window height without the Footer.
 	var totalWindowHeight = winHeight - footerHeight;
 
@@ -34,7 +35,7 @@ function scrollInit() {
 	}
 
 	// Set the styling on the Content Wrapper and Side Nav.
-	contentWrapper.css({'margin-top' : headerHeight});
+	contentWrapper.css({'margin-top' : headerHeight, 'height' : contentHeight});
 	$('.side-nav').css({'margin-top' : headerHeight, 'min-height' : sideNavHeight});
 	$('.res-nav-open-btn-container').css({'top' : headerHeight});
 
