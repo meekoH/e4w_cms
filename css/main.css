@@ -1,0 +1,171 @@
+/* Evan 4 Web CMS Stylings */
+/* Author: Evan Paradis */
+
+/* E4W Blue - #a0dfff, E4W Blue Hover - #49c2fc */
+/* E4W Orange - #ffd19b, E4W Orange Hover - #ffa741 */
+
+/*** Block Stylings ***/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+}
+body {
+	font-size: 18px;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Montserrat';
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	background-color: #1a1a1a;
+	background-image: url('../img/body-pattern.png');
+	background-repeat: repeat;
+}
+img, a {
+	border: 0;
+}
+.clear {
+	clear: both;
+}
+.mobile-hidden {
+	display: inherit;
+}
+.mobile-visible {
+	display: none;
+}
+/** Link Styles **/
+a {
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+a:hover {
+	color: #;
+}
+/** Heading Styles **/
+h1, h2, h3 {
+	font-weight: 300;
+	line-height: 1;
+}
+h1 {
+	font-size: 1.2em;
+}
+h2 {
+	font-size: 1em;
+}
+h3 {
+
+}
+/** Paragraph Styles **/
+p {
+	font-size: 1em;
+	line-height: 1.4;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+/** Fake Table Styles **/
+.display-table {
+	display: table;
+}
+.display-row {
+	display: table-row;
+}
+.display-cell {
+	display: table-cell;
+	border-collapse: collapse;
+	vertical-align: middle;
+}
+/** Float Styles **/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/** Text Align Styles **/
+.ta-center {
+	text-align: center;
+}
+.ta-right {
+	text-align: right;
+}
+.ta-left {
+	text-align: left;
+}
+/** Font Weight Styles **/
+.fw-light {
+	font-weight: 300;
+}
+.fw-regular {
+	font-weight: 400;
+}
+.fw-bold {
+	font-weight: 600;
+}
+.fw-bolder {
+	font-weight: 700;
+}
+.fw-black {
+	font-weight: 900;
+}
+/** Colour Styles **/
+.e4w-blue {
+	color: #a0dfff;
+}
+.e4w-hover-blue:hover {
+	color: #49c2fc;
+}
+.e4w-orange {
+	color: #ffd19b;
+}
+.e4w-hover-orange:hover {
+	color: #ffa741;
+}
+/*** Form Styles ***/
+.form-submit {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px;
+	font-size: 1em;
+	color: rgba(0,0,0,.6);
+	background-color: #a0dfff;
+	border: 1px solid rgba(0,0,0,.8);
+	-webkit-appearance: none;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.form-submit:hover {
+	color: #fff;
+	background-color: #49c2fc;
+}
+/*** Responsive Styles ***/
+
+/** Tablet Stylings **/
+@media screen and (max-width: 959px) and (min-width: 565px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+/** Mobile Stylings **/
+@media screen and (max-width: 564px) {
+	body {
+		font-size: 14px;
+	}
+	.mobile-hidden {
+		display: none;
+	}
+	.mobile-visible {
+		display: inherit;
+	}
+}
+
+/* Mobile Landscape Stylings */
+@media only screen and (orientation: landscape) and (device-width: 320px) {
+
+}

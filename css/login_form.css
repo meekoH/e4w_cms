@@ -1,0 +1,30 @@
+/*** Login Form Styles ***/
+.e4w-login-form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #3c3c3c;
+}
+.e4w-login-form .form-row {
+	padding: 10px;
+}
+.e4w-login-form .form-title {
+	display: block;
+	margin-bottom: 5px;
+	font-size: .8em;
+}
+.e4w-login-form .input-field {
+	width: 100%;
+	padding: 10px;
+	font-size: .7em;
+	color: #fff;
+	background-color: rgba(255,255,255,.2);
+	border: 1px solid rgba(0,0,0,.8);
+}
+.e4w-login-form .input-field:focus {
+	border: 1px solid #ffd19b;
+	outline: none;
+}
+.e4w-login-form .form-submit {
+	width: 100%;
+}

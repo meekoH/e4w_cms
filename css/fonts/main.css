@@ -132,6 +132,12 @@ p:last-child {
 .wrapper.hidden .content-wrapper {
 	width: 100%;
 }
+.wrapper.hidden .content {
+	padding: 15px;
+}
+.wrapper.hidden .res-nav-open-btn-container {
+	display: none;
+}
 .content-wrapper {
 	position: relative;
 	float: right;

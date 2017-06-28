@@ -1,5 +1,6 @@
 // Define the AngularJS application.
 e4wApp.controller('e4wLoginCtrl', ['$scope', '$http', function($scope, $http) {
+    // When the content is loaded, run the scrollInit() function to adjust the height of the content.
     $scope.$on('$viewContentLoaded', function () {
         scrollInit();
     });

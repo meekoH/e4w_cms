@@ -1,7 +1,7 @@
-// Let's set up a directive for the navigation.
+// navList directive used for setting up the Side Navigation.
 e4wApp.directive('navList', function(){
     return {
-        restrict: 'EA',
+        restrict: 'E',
         replace: true,
         templateUrl: './components/views/navigation/side_nav.html'
     };

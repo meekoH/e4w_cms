@@ -1,0 +1,77 @@
+/** Containment **/
+.wrapper {
+	position: relative;
+}
+.wrapper.hidden .side-nav {
+	opacity: 0;
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+}
+.wrapper.hidden .content-wrapper {
+	transform: translateX(-100px);
+	-webkit-transform: translateX(-100px);
+}
+.wrapper.hidden .content {
+	padding: 15px;
+}
+.wrapper.hidden .res-nav-open-btn-container {
+	display: none;
+}
+.content-wrapper {
+	position: relative;
+	float: right;
+	vertical-align: top;
+	width: calc(100% - 200px);
+	padding: 15px;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+
+    transition: transform .3s ease-in-out;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+}
+.content {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    opacity: 1;
+}
+.content.ng-enter, .content.ng-leave {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.content.ng-enter {
+    opacity: 0;
+}
+.content.ng-enter-active {
+    opacity: 1;
+}
+.content.ng-leave {
+    opacity: 1;
+}
+.content.ng-leave-active {
+    opacity: 0;
+}
+.e4w-card {
+	padding: 15px;
+	margin-bottom: 15px;
+	background-color: #4d4d4d;
+}
+.e4w-card:last-child {
+	margin-bottom: 0;
+}
+
+/** Mobile Stylings **/
+@media screen and (max-width: 564px) {
+	.content-wrapper {
+		width: 100%;
+	}
+	.wrapper.hidden .content-wrapper {
+		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+	}
+	.content {
+		padding: 50px 15px 15px;
+	}
+}
