@@ -1,9 +1,9 @@
 // contentHeight directive used to adjust the height of the content on the page.
-e4wApp.directive('contentHeight', function($timeout) {
+e4wApp.directive('contentHeight', function() {
 	return {
 		// Restrict this directive to attributes (A) only.
 		restrict: 'A',
-		link: function(scope, element) {
+		link: function(scope) {
 			// Watch the outerHeight (calculated height with the padding for box sizing).
 			scope.$watch(function() {
 				return $('.content').outerHeight(true);

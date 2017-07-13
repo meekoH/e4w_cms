@@ -3,11 +3,13 @@ var header = $('header');
 var footer = $('footer');
 var contentWrapper = $('.content-wrapper');
 var content = $('.content');
+// Set where the mobile media query kicks in.
+var mobileBreakPoint = 564;
 
 // scrollInit sets up the Side Navigation height and checks for mobile media queries.
 function scrollInit() {
 	//***** Navigation Requirements
-	//* The following stuff is required for sizing the Side Navigation appropriately.
+	//* The following is required for sizing the Side Navigation appropriately.
 	//*****
 
 	// Create an empty variable we'll use later.
@@ -43,8 +45,6 @@ function scrollInit() {
 	//* The following stuff is required for checking whether the browser is sized for mobile.
 	//*****
 
-	// Set where the mobile media query kicks in.
-	var mobileBreakPoint = 564;
 	// Get the Window width.
 	var winWidth = $(window).width();
 

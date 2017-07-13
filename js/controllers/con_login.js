@@ -1,5 +1,5 @@
 // Define the AngularJS application.
-e4wApp.controller('e4wLoginCtrl', ['$scope', '$http', function($scope, $http) {
+e4wApp.controller('e4wLoginCtrl', function($scope, $http) {
     // When the content is loaded, run the scrollInit() function to adjust the height of the content.
     $scope.$on('$viewContentLoaded', function () {
         scrollInit();
@@ -11,9 +11,7 @@ e4wApp.controller('e4wLoginCtrl', ['$scope', '$http', function($scope, $http) {
             "login_password" : loginDetails.login_password
         })
         .success(function(data) {
-            if (data == 'true') {
-                window.location.href = '#/dashboard';
-            }
+            $scope.userInfo = data;
         });
     }
-}]);
+});
