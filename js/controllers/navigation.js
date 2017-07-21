@@ -4,9 +4,6 @@ e4wApp.controller('sideNavCtrl', function($scope, $rootScope, $location, $http) 
     $rootScope.$on('$routeChangeSuccess', function() {
         $scope.location = $location.path();
     });
-    
-	// Run the getNavItems function to initialize the navigation.
-    getNavItems();
 
     // getProducts initializes the data and displays the contents to the user.
     function getNavItems() {
@@ -28,4 +25,7 @@ e4wApp.controller('sideNavCtrl', function($scope, $rootScope, $location, $http) 
     $scope.closeMobileNav = function() {
         $('header, .side-nav, .res-nav-close-btn-container').removeClass('nav-opened');
     }
+
+    // Run the getNavItems function to initialize the navigation.
+    getNavItems();
 });
