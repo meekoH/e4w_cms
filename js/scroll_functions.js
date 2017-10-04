@@ -1,5 +1,4 @@
 // Structural variables.
-var header = $('header');
 var footer = $('footer');
 var contentWrapper = $('.content-wrapper');
 var content = $('.content');
@@ -12,6 +11,7 @@ function scrollInit() {
 	//* The following is required for sizing the Side Navigation appropriately.
 	//*****
 
+	var header = $('header');
 	// Create an empty variable we'll use later.
 	var sideNavHeight;
 	// Get the Window height.
@@ -72,7 +72,7 @@ function scrollInit() {
 // Run the scrollInit() pretty much anytime something happens. This is to ensure that are our styles are always set correctly.
 $(window).scroll(scrollInit);
 $(window).resize(scrollInit);
-scrollInit();
+// scrollInit();
 
 // We're also going to run scrollInit() if the device orientation changes.
 // We do this because we want to adjust the min-height on the Side Navigation and ensure we remove any Mobile related classes.

@@ -7,18 +7,18 @@
     </head>
 
     <body>
-        <div class="wrapper" ng-app="e4wApp">
-
-            <?php require_once('components/site_components/header.php'); ?>
+        <div class="wrapper" ng-app="e4wApp" ng-controller="e4wLoginCtrl">
+            <e4w-header></e4w-header>
 
             <nav-list></nav-list>
 
             <div class="content-wrapper">
                 <div ng-view data-content-height class="content"></div>
             </div>
+
             <div class="clear"></div>
 
-            <?php require_once('components/site_components/footer.php'); ?>
+            <?php require_once('components/site_components/footer.html'); ?>
 
         </div>
     </body>

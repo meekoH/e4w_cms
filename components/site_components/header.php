@@ -11,7 +11,7 @@
 	<div class="display-table fl">
 		<div class="display-row">
 			<div class="display-cell header-logo">
-				<?php include('img/main-logo.svg'); ?>
+				<?php include('../../img/main-logo.svg'); ?>
 			</div>
 			<div class="display-cell">
 				<span class="header-title">Evan <span class="e4w-blue">4</span> Web</span>
@@ -29,7 +29,7 @@
 	<div class="display-table fr ta-right fw-light login-info">
 		<div class="display-row">
 			<div class="display-cell">
-				Welcome back, <span class="login-info-name e4w-blue"><span>Evan</span><span class="mobile-hidden"> Paradis</span></span>.
+				Welcome back, <span class="login-info-name e4w-blue"><span>{{userInfo.userFirstName}}</span><span class="mobile-hidden"> {{userInfo.userLastName}}</span></span>.
 
 				<span class="login-info-controls ta-right">
 					<a href="#">

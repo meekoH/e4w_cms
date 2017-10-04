@@ -1,14 +1,14 @@
-<form class="e4w-login-form fw-light" ng-submit="loginCtrl(loginDetails)">
+<form class="e4w-login-form fw-light" ng-submit="userLogin(currentUser)">
     <div class="form-row">
         <label>
             <span class="form-title">Email Address</span>
-            <input type="email" ng-model="loginDetails.login_email" class="input-field" required>
+            <input type="email" ng-model="currentUser.login_email" class="input-field" required>
         </label>
     </div>
     <div class="form-row">
         <label>
             <span class="form-title">Password</span>
-            <input type="password" ng-model="loginDetails.login_password" class="input-field" required>
+            <input type="password" ng-model="currentUser.login_password" class="input-field" required>
         </label>
     </div>
     <div class="form-row">
